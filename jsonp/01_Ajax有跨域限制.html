@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var xhr = new XMLHttpRequest()
+
+    xhr.onreadystatechange= function(){
+        if(xhr.readyState == 4){
+            alert(typeof xhr.responseText)
+        }
+
+    }
+    xhr.open("get","1.txt")
+    xhr.send(null)
+
+</script>
+
+
+</body>
+</html>
